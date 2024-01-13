@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+  <form name="register" method="post" action="../insertuser/">
+      <!--required cmd for database purpose -->
+      {% csrf_token %}
+    <pre>
+
+        <h1>REGISTRATION FORM</h1>
+      UID : <input type="text" name="uid" value="" width="200"><br>
+      NAME : <input type="text" name="uname" value="" width="200"><br>
+      EMAIL : <input type="text" name="uemail" value="" width="200"><br>
+      CONTACT: <input type="text" name="ucontact" value="" width="200"><br>
+
+       <input type="submit" name="reg" value="click to register" width="300" height="100">
+
+    </pre>
+  </form>
+</center>
+</body>
+</html>
